@@ -5,7 +5,7 @@ const VKCOINAPI = require('node-vkcoinapi');
 const vkcoin = new VKCOINAPI({
 token: "vk1.a.ouO_vvMjgv3F_GZWiIkVt4-jKs_RvYgQXeTa8qzXNlH1ATurCTUr3pAcj9gnbblE3k0-bSKz6W1spxT9oUAJCjmhxi1o1jsww00B-XP1yqZuMbT_Q1KRXwueiDjY7ocEGGgSOHeeVHBobVyrAq4InvV9cjWUKkJ7iW-ikqxBrHEDltpTAkXEsfXiMp7-4eywHGVjTbXLo_8gWb6KQmqQvQ",
  key: "b!v6KR0gP[2=CA*sH#lY#YWUSVE*pryHEVk3CUPiaS5wo3vWgc", 
- userId: 663349814});
+ userId: 748013079});
 const request = require('prequest');
 const { updates, snippets } = vk;
 const hd = require('humanize-duration');
@@ -180,7 +180,7 @@ const balance = Math.floor(message.user.balance * 1.00);
 message.user.balance = 0;
 
 await vkcoin.sendPayment(message.senderId, balance * 1000); 
-await message.send(`Выведено ${utils.sp(balance)} VK Coins.\nЕсли деньги не пришли пишите в личные сообщения @id663349814 (Феде Ханжину).`);
+await message.send(`Выведено ${utils.sp(balance)} VK Coins.\nЕсли деньги не пришли пишите в личные сообщения @uhud2010 (Игорю Микулину).`);
 
 });
 
@@ -228,7 +228,7 @@ user.balance += dep;
 
 cmd.hear(/^(?:проценты убрать)$/i, async (message, name) => { 
  
- if(message.senderId !== 416528201) return;
+ if(message.senderId !== 748013079) return;
  
  let dep = (user.deposit / 100) * 4;
  
