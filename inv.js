@@ -3,14 +3,14 @@ const vk = new VK();
 const commands = [];
 const VKCOINAPI = require('node-vkcoinapi');
 const vkcoin = new VKCOINAPI({
-token: "vk1.a.oi_eUZk3pwBEZyf7fDaEnN53w2TiTE_Q48-hIE5mr8O4NVbHwUC47qUpkLwp3l9XFqRGLjLgwK_Uvg9bkuejnH6ADkvsX0f-TckJ03r8QgKiz7tTF2IXlIY_keGhu73f98CX-u7ZbH0l_BBeB5doRC2eirOHjDW_Eqviw7RbDHz-Uao-PiemT4Z-dd8k1RWEdBZHMskRtFSflceS4gZgKA",
- key: "9u39[Jv7#faZD5[,&Fqoa=F[O0t-.J!vR[0v9K#a2N.Rx7ydAG", 
+token: "vk1.a.ouO_vvMjgv3F_GZWiIkVt4-jKs_RvYgQXeTa8qzXNlH1ATurCTUr3pAcj9gnbblE3k0-bSKz6W1spxT9oUAJCjmhxi1o1jsww00B-XP1yqZuMbT_Q1KRXwueiDjY7ocEGGgSOHeeVHBobVyrAq4InvV9cjWUKkJ7iW-ikqxBrHEDltpTAkXEsfXiMp7-4eywHGVjTbXLo_8gWb6KQmqQvQ",
+ key: "b!v6KR0gP[2=CA*sH#lY#YWUSVE*pryHEVk3CUPiaS5wo3vWgc", 
  userId: 663349814});
 const request = require('prequest');
 const { updates, snippets } = vk;
 const hd = require('humanize-duration');
 const rq = require("prequest");
-vk.setOptions({ token: 'vk1.a.UwtJ4bl_KzJ9znHXKKAF8ORg4BzgDS2r70sMX_22XIqswAWxPDl5bFFd1h8H-524kVAVMKEhELf8p-DC3RtWvBP03sTAHSDfROzf2ZQgczFIS7CQO1UX3Lls4rOgCqBe9328RUf2-QDlOH71H2BNgyqpjaQSYSK5s4gm5VsFm3PG4KvNZRttlECKpfd_LZmp-a2QqcM7f3NS6N8A5JLc_w', pollingGroupID:216854202});
+vk.setOptions({ token: 'vk1.a.ouO_vvMjgv3F_GZWiIkVt4-jKs_RvYgQXeTa8qzXNlH1ATurCTUr3pAcj9gnbblE3k0-bSKz6W1spxT9oUAJCjmhxi1o1jsww00B-XP1yqZuMbT_Q1KRXwueiDjY7ocEGGgSOHeeVHBobVyrAq4InvV9cjWUKkJ7iW-ikqxBrHEDltpTAkXEsfXiMp7-4eywHGVjTbXLo_8gWb6KQmqQvQ', pollingGroupID:216854202});
 let users = require('./users.json');
 updates.startPolling();
 
